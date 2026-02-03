@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solar's MM Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #6a11cb);
+      color: white;
+      text-align: center;
+    }
+    header {
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    p {
+      opacity: 0.9;
+    }
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .game {
+      background: rgba(255,255,255,0.15);
+      padding: 20px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.2s;
+    }
+    .game:hover {
+      transform: scale(1.05);
+      background: rgba(255,255,255,0.25);
+    }
+    footer {
+      padding: 20px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Solar's MM Services</h1>
+    <p>Simple web games — free to play</p>
+  </header>
+
+  <section class="games">
+    <div class="game" onclick="location.href='snake.html'">
+      <h2>Snake</h2>
+      <p>Classic snake game</p>
+    </div>
+    <div class="game" onclick="location.href='clicker.html'">
+      <h2>Clicker</h2>
+      <p>Simple clicking game</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Solar's MM Services
+  </footer>
+</body>
+</html>
